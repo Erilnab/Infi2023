@@ -19,3 +19,5 @@ public class While_Loop_Aufgabe_1 {
         System.out.println(randomsolution);
     }
 }
+
+
