@@ -1,13 +1,12 @@
 package at.era.BankomatBeispiel;
 
-import java.text.BreakIterator;
 import java.util.Scanner;
 
 public class Bankomat_Beispiel {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         double K = 0;
-        int eingabe=0;
+       int eingabe;
 
 
         System.out.println("Drücken Sie 1 um Geld einzahlen.");
@@ -24,7 +23,7 @@ public class Bankomat_Beispiel {
                 System.out.println("Um Geld einzuzahlen, Betrag eingeben.");
                 double e = scanner.nextDouble();
                 if (e < 0) {
-                    System.out.println("ojeee");
+                    System.out.println("Bitte einen positiven Betrag eingeben!");
                 } else {
                     K = K + e;
                     System.out.println("Kontostand: " + K);
@@ -33,8 +32,9 @@ public class Bankomat_Beispiel {
             else if (eingabe == 2) {
                     System.out.println("Um Geld abzuheben, Betrag eingeben.");
                     double a = scanner.nextDouble();
-                    if (a < 0) {
-                        System.out.println("ojeee");
+                    if (a>K) {
+                        System.out.println("Sie sind nicht berechtigt Ihr Konto zu überziehen!");
+                        System.out.println("Kontostand:" +K);
                     } else {
                         K = K - a;
                         System.out.println("Kontostand: " + K);
