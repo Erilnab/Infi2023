@@ -8,14 +8,11 @@ public class Bankomat_Beispiel {
         double K = 0;
        int eingabe;
 
-
+        do {
         System.out.println("Drücken Sie 1 um Geld einzahlen.");
         System.out.println("Drücken Sie 2 um Geld abheben.");
         System.out.println("Drücken Sie 3 um Ihren Kontostand anzuzeigen.");
         System.out.println("Drücken Sie 4 um den Vorgang zu beenden.");
-        do {
-
-
 
         eingabe=scanner.nextInt();
 
