@@ -7,6 +7,17 @@ public class Katze {
     private String farbe;
     private String name;
 
+    public Katze() {
+    }
+
+    public Katze(String name, int alter, String farbe, String charakter, String oberflächenbeschaffenheit) {
+        this.name = name;
+        this.alter = alter;
+        this.farbe = farbe;
+        this.charakter = charakter;
+        this.oberflächenbeschaffenheit = oberflächenbeschaffenheit;
+    }
+
     public String getCharakter() {
         return charakter;
     }
