@@ -33,6 +33,8 @@ public class Testit {
         //Katze katze2=new Katze("nette", "nackt", 5, "rosa", "Nackthanael");
         //mKatzenListe.add(katze2);
         int nummer=1;
+
+        Haus hasu = new Haus(350, "Höchsterstrasse 73, 6850 Dornbirn", 8);
         for (Katze k :mKatzenListe){
             System.out.println("Katze "+nummer+":");
             System.out.println("Die Katze "+k.getName()+" ist "+k.getAlter()+" Jahre alt!");
