@@ -25,9 +25,9 @@ public class Testit2 {
                 mF1AutoListe.add(new F1Auto(motorListe[ml], bl, sl, teamListe[tl]));
             }
 
-        for( F1Auto a: mF1AutoListe){
-            System.out.println(a.getBhp()+a.getTopspeed()+a.getMotor()+a.getTeamname());
-        }
+
+
+
     }
 
 
