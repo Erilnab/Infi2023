@@ -57,4 +57,11 @@ public class Katze {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void getInfo() {
+        System.out.println("Die Katze " + this.name + " ist " + this.alter + " Jahre alt!" +
+                "\nSie ist " + this.charakter + " und hat die Farbe " + this.farbe + "." +
+                "\nIhre Oberfläche ist " + this.oberflächenbeschaffenheit + "." +
+                "\n");
+    }
 }

@@ -9,7 +9,7 @@ public class Testit {
         Random r=new Random();
         ArrayList<Katze> mKatzenListe = new ArrayList<>();
         Katze katze=new Katze();
-        String[] NamenListe={"Nathanel","EliasR","EliasG","Elija","Marvin","Norah","David","Berke","Julia","Marina","Jacob, Herr Schwärzler"};
+        String[] NamenListe={"Nathanel","EliasR","EliasG","Elija","Marvin","Norah","David","Berke","Julia","Marina","Jacob, Schwärzler, Felix"};
         String[] FarbeListe={"braun","rot","gruen","gelb","rosa","weiß","schwarz","grau","orange","kariert","blau","violet","racing green"};
         String[] charListe={"bösartig","gutartig","hinterhältig","listig","schmusig","lieblich","schnell","lustig","nerfig"};
         String[] oberflaecheListe={"brotartig","flauschig","bürstig","hart","weich","glatt","metallern","epoxiharz","rutschig","schleimig","carnaubawachs"};
@@ -34,7 +34,10 @@ public class Testit {
         //mKatzenListe.add(katze2);
         int nummer=1;
 
-        Haus hasu = new Haus(350, "Höchsterstrasse 73, 6850 Dornbirn", 8);
+        Haus haus = new Haus(10000, "Höchsterstrasse 73, 6850 Dornbirn", 80, 5);
+        haus.getInfo();
+
+
         for (Katze k :mKatzenListe){
             System.out.println("Katze "+nummer+":");
             System.out.println("Die Katze "+k.getName()+" ist "+k.getAlter()+" Jahre alt!");
@@ -42,6 +45,8 @@ public class Testit {
             System.out.println("Ihre Oberfläche ist "+ k.getOberflächenbeschaffenheit()+".");
             System.out.println("");
             nummer++;
+            haus.addKatze(k);
         }
+        haus.getKatzenimHaus();
     }
 }
