@@ -12,9 +12,7 @@ public class Testit2 {
         Random r=new Random();
         ArrayList<F1Auto> mF1AutoListe = new ArrayList<>();
         ArrayList<Box> mBoxListe = new ArrayList<>();
-        F1Auto f1Auto=new F1Auto();
-        Box box=new Box();
-        //F1Auto F1Auto=new F1Auto();
+        Box box=new Box(int flaeche, int geld, int maxAutoinBox);
         String[] motorListe={"V6","V8","V10","V12","W16","Straight6","Straigt5","Straigt4","Straigt3"};
         String[] teamListe={"Rebull","Mercedes","AstonMartin","4aWP","Mclaren","Ferrari","Porsche","Audi"};
 
@@ -32,9 +30,10 @@ public class Testit2 {
                 mBoxListe.add(new Box(fl,gl,al));
 
             }
-            for (F1Auto a): mF1AutoListe{
-                box.addF1auto(a);
+            for (F1Auto a: mF1AutoListe){
+              box.addF1Auto();
         }
+        box.getF1AutoinBox();
     }
 
 }
