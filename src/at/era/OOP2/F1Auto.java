@@ -44,4 +44,8 @@ public class F1Auto {
     public void setTeamname(String teamname) {
         Teamname = teamname;
     }
+
+    public void getInfo(){
+        System.out.println("der fisch im topf ist groß");
+    }
 }

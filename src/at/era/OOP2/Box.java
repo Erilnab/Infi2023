@@ -4,11 +4,16 @@ import java.util.ArrayList;
 
 public class Box {
     private int flaeche;
-    private int gled;
-    private int boss;
+    private int geld;
+    private int maxAutoinBox;
     private ArrayList<F1Auto> f1AutoList;
 
-    public Box
+    public Box(int flaeche, int geld, int maxAutoinBox) {
+        this.flaeche = flaeche;
+        this.geld = geld;
+        this.maxAutoinBox = maxAutoinBox;
+        this.f1AutoList = new ArrayList<>();
+    }
 
     public int getFlaeche() {
         return flaeche;
@@ -18,20 +23,20 @@ public class Box {
         this.flaeche = flaeche;
     }
 
-    public int getGled() {
-        return gled;
+    public int getGeld() {
+        return geld;
     }
 
-    public void setGled(int gled) {
-        this.gled = gled;
+    public void setGeld(int geld) {
+        this.geld = geld;
     }
 
-    public int getBoss() {
-        return boss;
+    public int getMaxAutoinBox() {
+        return maxAutoinBox;
     }
 
-    public void setBoss(int boss) {
-        this.boss = boss;
+    public void setMaxAutoinBox(int maxAutoinBox) {
+        this.maxAutoinBox = maxAutoinBox;
     }
 
     public ArrayList<F1Auto> getF1AutoList() {
@@ -40,5 +45,13 @@ public class Box {
 
     public void setF1AutoList(ArrayList<F1Auto> f1AutoList) {
         this.f1AutoList = f1AutoList;
+    }
+
+    public void getInfo() {
+        System.out.println("Fläche:" + this.flaeche +
+                "\nGeld:" + this.geld);
+    }
+    public void add F1Auto(F1Auto f1Auto){
+
     }
 }

@@ -65,5 +65,4 @@ public class Haus {
             katze.getInfo();
         }
     }
-
 }
