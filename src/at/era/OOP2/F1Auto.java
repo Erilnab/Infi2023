@@ -46,6 +46,8 @@ public class F1Auto {
     }
 
     public void getInfo(){
-        System.out.println("der fisch im topf ist groß");
+        System.out.println("Das Auto hat einen "+ this.Motor+" Motor." +
+                "\nEs hat " + this.bhp +"hp." +
+                "\nEbenfalls ist die Höchstgeschwindigkeit "+ this.topspeed + "kmph und sein Team ist " + this.Teamname);
     }
 }

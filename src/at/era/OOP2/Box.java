@@ -8,15 +8,14 @@ public class Box {
     private int flaeche;
     private int geld;
     private int maxAutoinBox;
-
     private String fahrer;
     private ArrayList<F1Auto> f1AutoListe;
 
-    public Box(int flaeche, int geld, int maxAutoinBox) {
+    public Box(int flaeche, int geld, int maxAutoinBox, String fahrer) {
         this.flaeche = flaeche;
         this.geld = geld;
         this.maxAutoinBox = maxAutoinBox;
-        this.fahrer
+        this.fahrer = fahrer;
         this.f1AutoListe = new ArrayList<>();
     }
 
@@ -62,7 +61,7 @@ public class Box {
 
     public void getInfo() {
         System.out.println("Fläche:" + this.flaeche +
-                "\nGeld:" + this.geld);
+                "\nGeld:" + this.geld+ "\n Fahrer:" +this.fahrer);
     }
     public void addF1Auto(F1Auto f1Auto){
         if (f1AutoListe.size()>this.maxAutoinBox){
